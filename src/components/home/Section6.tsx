@@ -9,13 +9,12 @@ import socialLinks from "@/data/socialLinks";
 const HomeSection6 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="dark:bg-[var(--dialogColor)] bg-[var(--dialogColor)] min-h-screen items-center justify-center dark:bg-dot-white/[0.15] bg-dot-white/[0.15] items-center justify-center"
+      classNames="dark:bg-[var(--dialogColor)] bg-[var(--dialogColor)] items-center justify-center dark:bg-dot-white/[0.15] bg-dot-white/[0.15]"
       id={id}
     >
-      <ConstrainedBox classNames="p-4 py-16">
+      <ConstrainedBox classNames="p-4 py-24">
         <SectionTitle>Get in Touch</SectionTitle>
-
-        <Column classNames="mt-16 w-full">
+        <Column classNames="mt-12 w-full">
           <GridBox classNames="sm:grid-cols-2 w-full mx-auto gap-4">
             {socialLinks.map((link, index) => {
               return (
@@ -28,8 +27,7 @@ const HomeSection6 = ({ id }: { id: string }) => {
               );
             })}
           </GridBox>
-
-          <p className="text-center mx-auto mt-16 text-2xl/6 font-semibold">
+          <p className="text-center mx-auto mt-12 text-2xl/6 font-semibold">
             I&apos;m{" "}
             <span className="text-[var(--primaryColor)]">available</span> for
             freelancing.

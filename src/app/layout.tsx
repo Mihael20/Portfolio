@@ -83,14 +83,13 @@ const FloatingNavbar = dynamic(
   () => import("@/components/navbar/FloatingNavbar")
 );
 const ScrollToTop = dynamic(() => import("@/components/common/ScrollToTop"));
-
 const isDebug = process.env.NODE_ENV === "development";
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
       {isDebug ? null : <GoogleAnalytics />}
-      <body className={isDebug ? "debug-screens" : ""}>
+      <body className="">
         {isDebug ? <WebVitals /> : null}
         <FloatingNavbar className="app_nav" navItems={navMenus} />
         <main>{children}</main>
