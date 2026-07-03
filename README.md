@@ -59,6 +59,7 @@ npm run dev
 ```
 
 Open [http://localhost:4000](http://localhost:4000) in your browser.
+or open https://portfolio-one-jet-5nl5ka2r2e.vercel.app/ 
 
 ## 📦 Build for Production
 
